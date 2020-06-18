@@ -42,23 +42,24 @@ function promptUser () {
 inqPromise = promptUser();
 inqPromise.then(function(userInput){
 
-    let html = `
+    let md = `
     ${userInput.name}
-    ${userInput.describe}.
+    ${userInput.describe}
     ${userInput.contributers} 
     ${userInput.challenging}
     ${userInput.learn}
     ${userInput.GitHubURL}
         
     ` ;
-    let writePromise = writeFileAsync("ReadMe.md" , md);
+    let writePromise = writeFileAsync("ReadMe2.md" , md);
     writePromise.then(function() {
-        console.log("successfully wrote out to ReadMe.md");
+        console.log("successfully wrote out to ReadMe2.md");
     }) .catch(function(err) {
-        console.log("problem with writing file ReadMe.md")
+        console.log("problem with writing file ReadMe2.md")
         console.log(err);
     }) .catch(function(err) {
+        
         console.log("problem with inquirer.prompt");
         console.log(err);
-    })
+    });
     }); 
