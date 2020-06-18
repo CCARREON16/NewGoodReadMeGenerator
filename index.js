@@ -14,7 +14,7 @@ function promptUser () {
         {
             type: "input",
             message: "Who is the Author of your project?",
-            name: "name"
+            name: "Author"
         },
         {
             type: "input",
@@ -60,7 +60,7 @@ inqPromise.then(function(userInput){
 
     let md = `
     Project Name - ${userInput.name}
-    Author - ${userInput.name}
+    Author - ${userInput.Author}
     License - ${userInput.license}
 
     Table of contents
@@ -74,12 +74,12 @@ inqPromise.then(function(userInput){
     
     
     
-    Describe- ${userInput.describe}
-    Motivation- ${userInput.Motivation} 
+    Describe project- ${userInput.describe}
+    Motivation for project- ${userInput.Motivation} 
     Challenge- ${userInput.challenging}
     Learn- ${userInput.Learn}
     Standout- ${userInput.Standout}
-    Username- ${userInput.username}
+    Github Username- ${userInput.username}
 
 
 
