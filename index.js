@@ -12,14 +12,25 @@ function promptUser () {
             name: "name"
         },
         {
+            type: "input",
+            message: "Who is the Author of your project?",
+            name: "name"
+        },
+        {
+            type: "input",
+            message: "What license did you use?",
+            name: "license"
+        },
+        
+        {
             type:"input",
             message: "Describe your project ?",
             name: "describe"
         },
         {
             type: "input",
-            message: "how many contributors in your project?",
-            name: "contributers"
+            message: "What was the motivation for your project?",
+            name: "Motivation"
         },
         {
             type: "input",
@@ -33,8 +44,13 @@ function promptUser () {
         },
         {
             type: "input",
-            message: "what is your GitHub URL?",
-            name: "GitHubURL"
+            message: "What makes this project Standout?",
+            name: "Standout"
+        },
+        {
+            type: "input",
+            message: "what is your GitHub username?",
+            name: "username"
         }
     ]
     )
@@ -43,12 +59,30 @@ inqPromise = promptUser();
 inqPromise.then(function(userInput){
 
     let md = `
-    ${userInput.name}
-    ${userInput.describe}
-    ${userInput.contributers} 
-    ${userInput.challenging}
-    ${userInput.learn}
-    ${userInput.GitHubURL}
+    Project Name - ${userInput.name}
+    Author - ${userInput.name}
+    License - ${userInput.license}
+
+    Table of contents
+    
+    *Describe
+    *Motivation
+    *Challenge
+    *Learn
+    *Standout
+    *Username 
+    
+    
+    
+    Describe- ${userInput.describe}
+    Motivation- ${userInput.Motivation} 
+    Challenge- ${userInput.challenging}
+    Learn- ${userInput.Learn}
+    Standout- ${userInput.Standout}
+    Username- ${userInput.username}
+
+
+
         
     ` ;
     let writePromise = writeFileAsync("ReadMe2.md" , md);
