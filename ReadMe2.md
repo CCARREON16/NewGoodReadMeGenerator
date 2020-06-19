@@ -1,7 +1,7 @@
 
-    Project Name - Good Read Me Generator
+    Project Name - Good Read Me Project
     Author - Christopher James Carreon the First
-    License - Isc license
+    License - ISC License
 
     Table of contents
     
@@ -14,13 +14,12 @@
     
     
     
-    Describe project- You create a ReadMe.md through node.js
-    Motivation for project- Learning more about node.js 
-    Challenge- Getting my index.js to populate to my readme file
-    Learn- I learned further how to use node.js
-    Standout- The ReadMe2.md makes this prject standout 
-    Username- CCARREON16
-
+    Describe project- creating a Readme.md through node.js
+    Motivation for project- learning node.js 
+    Challenge- getting my index.js to pupulate to the readme.md
+    Learn- i learned more about node.js
+    Standout- The ReadMe2.md makes this project Standout
+    Github Username- CCARREON16
 
 
         
